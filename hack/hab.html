@@ -1,0 +1,642 @@
+<html>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+
+    <link href="hab_files/css_004.css" rel="stylesheet" type="text/css">
+    <link href="hab_files/css.css" rel="stylesheet" type="text/css">
+    <link href="hab_files/css_002.css" rel="stylesheet" type="text/css">
+    <link href="hab_files/css_003.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="hab_files/style.css" type="text/css">
+    <!--  <link rel="stylesheet" href="hab_files/reset.css" type="text/css">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="hab_files/font-awesome.css">
+
+    <!-- simple line icons -->
+  <link rel="stylesheet" type="text/css" href="hab_files/simple-line-icons.css" media="screen">
+
+    <!-- et linefont icons -->
+    <link rel="stylesheet" href="hab_files/etlinefont.css">
+
+    <!-- animations -->
+    <link href="hab_files/animations.css" rel="stylesheet" type="text/css" media="all">
+
+    <!-- responsive devices styles -->
+  <link rel="stylesheet" media="screen" href="hab_files/responsive-leyouts.css" type="text/css">
+
+    <!-- shortcodes -->
+    <link rel="stylesheet" media="screen" href="hab_files/shortcodes.css" type="text/css">
+
+    <!-- style switcher -->
+    <link rel="stylesheet" media="screen" href="hab_files/color-switcher.css">
+
+    <!-- mega menu -->
+    <link href="hab_files/bootstrap.css" rel="stylesheet">
+  <link href="hab_files/demo.css" rel="stylesheet">
+  <link href="hab_files/menu23.css" rel="stylesheet">
+
+    <!-- MasterSlider -->
+  <link rel="stylesheet" href="hab_files/masterslider.css">
+    <link rel="stylesheet" href="hab_files/style_002.css">
+
+    <!-- cubeportfolio -->
+    <link rel="stylesheet" type="text/css" href="hab_files/cubeportfolio.css">
+
+    <!-- owl carousel -->
+    <link href="hab_files/owl.css" rel="stylesheet">
+    <link href="hab_files/owl_002.css" rel="stylesheet">
+
+    <!-- tabs 2 -->
+    <link href="hab_files/tabacc.css" rel="stylesheet">
+  <link href="hab_files/detached2.css" rel="stylesheet">
+
+    <!-- tabs -->
+    <link rel="stylesheet" type="text/css" href="hab_files/responsive-tabs3.css">
+
+    <!-- accordion -->
+    <link rel="stylesheet" type="text/css" href="hab_files/style_003.css">
+
+
+    <style type="text/css">
+
+			::-webkit-scrollbar
+			{
+		    	width: 10px;
+			}
+
+
+			::-webkit-scrollbar-track
+			{
+		    	background: #transparent;
+			}
+
+			::-webkit-scrollbar-thumb
+			{
+		    	background: #888;
+			}
+
+			::-webkit-scrollbar-thumb:hover
+			{
+		    	background: #555;
+			}
+
+
+			@media screen and (min-width: 1080px)
+			{
+			    menu{
+			        width:100%;
+			    }
+			}
+
+			#header-max
+			{
+				padding: 2%;
+				height:15%;
+				backface-visibility: 0.5;
+				background-color: #67c8ff;
+				width:97%;
+			}
+
+			#menu
+			{
+				float:right;
+				font-family: cursive;
+				background:transparent;
+			}
+			#search-max
+			{
+				width:97%;
+				height:10%;
+			}
+			#search
+			{
+				width:40%;
+				border:0px;
+				border-bottom: 1px solid black;
+				outline: none;
+			}
+			#search-btn
+			{
+				padding:0.2%;
+				background-color: #67c8ff;
+				cursor:hand;
+				border:0px;
+			}
+			#search-btn:hover
+			{
+				background-color: #00c8ff;
+			}
+			.projects-max
+			{
+				padding: 2%;
+				width:97%;
+				background-color: #232323;
+				overflow: auto;
+				text-align:justify;
+			}
+			.projects-max .desc-left
+			{
+				color: white;
+				float:left;
+				background-color: #181818;
+				width:80%;
+				height:40%;
+				padding: 2%;
+			}
+			.projects-max .desc-right
+			{
+				background-color: #B0B0B0;
+				float:right;
+				width:80%;
+				height: 40%;
+				padding:2%;
+			}
+			#links-max
+			{
+				padding:0.5%;
+				font-family: cursive;
+				background-color:#505050;
+				width:99.5%;
+				overflow: auto;
+			}
+			.projects-max .pic
+			{
+				max-height:80%;
+			}
+			#footer
+			{
+				padding: 0.5%;
+				width:99.5%;
+				background-color:#5d8aa8;
+			}
+			a:link
+			{
+				color: white;
+			}
+			a:visited
+			{
+				color: #E8E8E8;
+			}
+			a:active
+			{
+				color: #202020;
+			}
+		</style>
+		<script type="text/javascript">
+    function showPosition(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(function(position){
+                var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                document.getElementById("result").innerHTML = positionInfo;
+            });
+        } else{
+            alert("Sorry, your browser does not support HTML5 geolocation.");
+        }
+    }
+</script>
+	</head>
+	<body>
+		<div id="header-max">
+			<font face="cursive" style="font-size:150%">Aaushadhi !</font>
+			<div id="menu">
+				<a href="hab.html">Home</a> | <a href="projects.html">About Us!</a> | <a href="#">Contact Us!</a> | <a href="#">Stores!</a> | <a href="#">Register</a>
+			</div>
+		</div>
+		<br>
+		<div  id="search-max">
+			<center>
+				<form method="post"
+				action="result.php">
+				<input type="text" name="user_query" size"80" placeholder="enter your medicine here" />
+				<input type="submit" name="search" value="search now"/>
+			</form>
+
+			</center>
+		</div>
+		<div id="links-max">
+			<a href="projects.php?cat=all">All Projects</a> | <a href="projects.php?cat=ongoing">Upcoming  Projects</a> | <a href="projects.php?cat=completed">Completed Projects</a>
+			<div style="float:right">
+				<a href="Login_Page/signup.php">Sign-Up</a> | <a href="Login_Page/first.php">Log-In</a>
+			</div>
+		</div>
+		<!-- <br>
+		<center><h3 style="font-family: cursive;">India's Largest Online Database of Medicines !</h3></center>
+    <div class="clearfix"></div>
+
+ -->
+
+    <!-- masterslider -->
+    <div class="slidermar">
+    <div class="master-slider ms-skin-default" id="masterslider">
+
+        <div class="ms-slide slide-1" data-delay="9">
+
+            <div class="slide-pattern"></div>
+
+            <img src="*" data-src="hab_files/1.jpg" alt=""/>
+
+            <h3 class="ms-layer text1"
+                style="left: 115px; top: 200px;"
+                data-type="text"
+                data-effect="top(45)"
+                data-duration="2000"
+                data-delay="500"
+                data-ease="easeOutExpo"
+
+                >
+            </h3>
+
+            <h4 class="ms-layer text2 caps"
+                style="left: 115px; top: 255px;"
+                data-type="text"
+                data-effect="top(45)"
+                data-duration="2000"
+                data-delay="1000"
+                data-ease="easeOutExpo"
+            >
+
+
+            </h4>
+
+            <h5 class="ms-layer text3"
+                style="left: 115px; top: 340px;"
+                data-type="text"
+                data-effect="bottom(45)"
+                data-duration="2000"
+                data-delay="1500"
+                data-ease="easeOutExpo"
+            >
+
+
+            </h5>
+
+            <a class="ms-layer sbut1"
+                style="left: 115px; top: 450px;"
+                data-type="text"
+                data-delay="2000"
+                data-ease="easeOutExpo"
+                data-duration="1200"
+                data-effect="scale(1.5,1.6)"
+            >
+
+
+            </a>
+
+            <a class="ms-layer sbut2"
+                style="left: 300px; top: 450px;"
+                data-type="text"
+                data-delay="2200"
+                data-ease="easeOutExpo"
+                data-duration="1200"
+                data-effect="scale(1.5,1.6)"
+            >
+
+
+            </a>
+
+
+        </div><!-- end slide 1 -->
+
+
+        <div class="ms-slide slide-2" data-delay="5">
+
+            <div class="slide-pattern"></div>
+
+            <img src="*" data-src="hab_files/2.jpg" alt=""/>
+
+            <h3 class="ms-layer text1"
+                style="left: 115px; top: 200px;"
+                data-type="text"
+                data-effect="skewleft(25,90)"
+                data-duration="2000"
+                data-ease="easeOutQuart"
+                data-delay="500"
+            >
+
+
+            </h3>
+
+            <h4 class="ms-layer text2 caps"
+                style="left: 115px; top: 255px;"
+                data-type="text"
+                data-effect="skewright(25,90)"
+                data-duration="2000"
+                data-ease="easeOutQuart"
+                data-delay="1000"
+            >
+
+            </h4>
+
+            <h5 class="ms-layer text3"
+                style="left: 115px; top: 340px;"
+                data-type="text"
+                data-effect="bottom(45)"
+                data-duration="2000"
+                data-delay="1500"
+                data-ease="easeOutExpo"
+            >
+
+
+            </h5>
+
+            <a class="ms-layer sbut1"
+                style="left: 115px; top: 450px;"
+                data-type="text"
+                data-delay="2000"
+                data-ease="easeOutExpo"
+                data-duration="1200"
+                data-effect="scale(1.5,1.6)"
+            >
+
+
+            </a>
+
+            <a class="ms-layer sbut2"
+                style="left: 300px; top: 450px;"
+                data-type="text"
+                data-delay="2200"
+                data-ease="easeOutExpo"
+                data-duration="1200"
+                data-effect="scale(1.5,1.6)"
+            >
+
+
+            </a>
+
+
+        </div><!-- end slide 2 -->
+
+
+
+        <div class="ms-slide slide-2" data-delay="5">
+
+            <div class="slide-pattern"></div>
+
+            <img src="" data-src="hab_files/3.jpg" alt=""/>
+
+            <h3 class="ms-layer text1"
+                style="left: 115px; top: 200px;"
+                data-type="text"
+                data-effect="skewleft(25,90)"
+                data-duration="2000"
+                data-ease="easeOutQuart"
+                data-delay="500"
+            >
+
+
+            </h3>
+
+            <h4 class="ms-layer text2 caps"
+                style="left: 115px; top: 255px;"
+                data-type="text"
+                data-effect="skewright(25,90)"
+                data-duration="2000"
+                data-ease="easeOutQuart"
+                data-delay="1000"
+            >
+
+            </h4>
+
+            <h5 class="ms-layer text3"
+                style="left: 115px; top: 340px;"
+                data-type="text"
+                data-effect="bottom(45)"
+                data-duration="2000"
+                data-delay="1500"
+                data-ease="easeOutExpo"
+            >
+
+
+            </h5>
+
+            <a class="ms-layer sbut1"
+                style="left: 115px; top: 450px;"
+                data-type="text"
+                data-delay="2000"
+                data-ease="easeOutExpo"
+                data-duration="1200"
+                data-effect="scale(1.5,1.6)"
+            >
+
+
+            </a>
+
+            <a class="ms-layer sbut2"
+                style="left: 300px; top: 450px;"
+                data-type="text"
+                data-delay="2200"
+                data-ease="easeOutExpo"
+                data-duration="1200"
+                data-effect="scale(1.5,1.6)"
+            >
+
+
+            </a>
+
+
+        </div><!-- end slide 3 -->
+
+
+
+
+    </div>
+    </div>
+    <!-- end of masterslider -->
+
+
+    <div class="clearfix"></div>
+
+
+    <div class="featured_section134">
+    <div class="container">
+
+        <div class="one_third animate fadeIn" data-anim-type="fadeIn" data-anim-delay="100">
+
+    		<i class="fa fa-stethoscope"></i>
+            <h5>Find any medicine</h5>
+          <p>Here you will find any medicine you need to do is enter the medicine name in the search box  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;and bang it will give you the  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;results</p>
+
+        </div><!-- end section -->
+
+        <div class="one_third animate fadeIn" data-anim-type="fadeIn" data-anim-delay="200">
+
+    		<i class="fa fa-medkit"></i>
+            <h5>Give accuratae location</h5>
+            <p>When you enter the medicine name in the search box it will give you the sore locaton on the google  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;map</p>
+
+        </div><!-- end section -->
+
+        <div class="one_third last animate fadeIn" data-anim-type="fadeIn" data-anim-delay="300">
+
+    		<i class="fa fa-heart-o"></i>
+            <h5>More feautres</h5>
+            <p>will be added soon</p>
+
+        </div><!-- end section -->
+
+
+    </div>
+			
+    <div class="clearfix margin_top12"></div>
+
+
+    <div class="featured_section138">
+    <div class="container">
+
+
+        <h2 class="title21 white lessm"><strong>Top Health Tips</strong> <em>making the true the packages web page editors</em></h2>
+
+    	<ul class="left">
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="100">Drink a Glass of Water in the Morning</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="150">Avoid Pesticides in Your Food</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="200">Eat Breakfast is the Most Important</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="250">Take a Walk 20 Minutes 3 Times a Week</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="300">Avoid Electromagnetic Field Toxicity</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="350">Make Social Connections</li>
+            <li class="last animate" data-anim-type="fadeInUp" data-anim-delay="400">Study Lists of Your Favorite Products</li>
+        </ul>
+
+        <ul class="right">
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="100">Eat Wild Salmon Frequently</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="150">Sleep 7 to 9 Hours in a Pitch Dark Bedroom</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="200">Alcohol Keeps your Blood Sugar Unstable</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="250">Check Food Labels for the Word</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="300">Use Hair and Skin Care Products</li>
+            <li class="animate" data-anim-type="fadeInUp" data-anim-delay="350">Find New Activities</li>
+            <li class="last animate" data-anim-type="fadeInUp" data-anim-delay="400">Love Always look on Bright Side of Life</li>
+        </ul>
+
+
+    </div>
+    </div><!-- end featured section 138 -->
+    <div class="clearfix"></div>
+
+
+    <footer class="footer6 lesstp">
+
+    <div class="container">
+
+        <div class="column1 animate" data-anim-type="fadeIn" data-anim-delay="100">
+
+    		<h3>About Us</h3>
+            <p>   Text will be added here</p>
+
+        </div><!-- end section -->
+
+    	<div class="column2 animate" data-anim-type="fadeIn" data-anim-delay="150">
+
+    		<h3>More Services</h3>
+
+          <em> text will be added here ..</em>
+        </div><!-- end section -->
+
+
+        <div class="column1 animate" data-anim-type="fadeIn" data-anim-delay="200">
+
+            <h3>Our Clients</h3>
+
+    		<em> Text goes here</em>
+
+        </div><!-- end section -->
+
+    	<div class="column1 last animate" data-anim-type="fadeIn" data-anim-delay="250">
+
+            <h3>Get Connected</h3>
+              <em> Text goes here</em>
+
+
+            <div class="clearfix margin_top2"></div>
+
+            <!--<img src="hab_files/footer-logo3.png" alt="">   -->
+
+        </div><!-- end section -->
+
+     </div><!-- end footer -->
+
+    <div class="clearfix"></div>
+
+    <div class="copyright_info4">
+    <div class="container">
+
+    	<div class="clearfix divider_dashed10"></div>
+
+        <div class="one_half animate" data-anim-type="fadeInRight" data-anim-delay="200">
+
+            Copyright ©MIET All rights reserved.
+
+        </div>
+
+        <div class="one_half last animate" data-anim-type="fadeInLeft" data-anim-delay="200">
+
+    		<a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+
+        </div>
+
+    </div>
+    </div><!-- end copyright info -->
+
+    </footer>
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- ######### JS FILES ######### -->
+    <!-- get jQuery used for the theme -->
+    <script type="text/javascript" src="hab_files/jquery_002.js"></script>
+    <script src="hab_files/styleselector.js"></script>
+    <script src="hab_files/animations.js" type="text/javascript"></script>
+    <script src="hab_files/bootstrap.js"></script>
+    <script src="hab_files/customeUI.js"></script>
+    <script src="hab_files/jquery_004.js"></script>
+    <script src="hab_files/masterslider.js"></script>
+    <script type="text/javascript">
+    (function($) {
+     "use strict";
+    	var slider = new MasterSlider();
+    	// adds Arrows navigation control to the slider.
+    	slider.control('arrows');
+    	slider.control('bullets');
+
+    	slider.setup('masterslider' , {
+    		 width:1400,    // slider standard width
+    		 height:620,   // slider standard height
+    		 space:0,
+    		 speed:27,
+    		 layout:'fullwidth',
+    		 loop:true,
+    		 preload:0,
+    		 autoplay:true,
+    		 view:"parallaxMask",
+    	});
+    })(jQuery);
+    </script>
+    <script src="hab_files/totop.js" type="text/javascript"></script>
+    <script type="text/javascript" src="hab_files/sticky.js"></script>
+    <script type="text/javascript" src="hab_files/modernizr.js"></script>
+
+    <script src="hab_files/responsive-tabs.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="hab_files/jquery.js"></script>
+    <script type="text/javascript" src="hab_files/main8.js"></script> -->
+  <script src="hab_files/index.js"></script>
+    <script>
+    $('.accordion, .tabs').TabsAccordion({
+    	hashWatch: true,
+    	pauseMedia: true,
+    	responsiveSwitch: 'tablist',
+    	saveState: sessionStorage,
+    });
+    </script>
+    <script src="hab_files/owl.js"></script>
+
+    <script type="text/javascript" src="hab_files/jquery_003.js"></script>
+    <script type="text/javascript" src="hab_files/custom_002.js"></script>
+
+    <script type="text/javascript" src="hab_files/custom.js"></script>
+</body></html>
